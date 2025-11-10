@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section className="app">
       <img src="public/over-mij.png" alt="nikan"  />
-      <h1 className="title">Over Ons</h1>
+      <h1 className="title">Over Mij</h1>
       <p>Hoi, ik ben Nikan Sartipnia, ik ben 19 jaar en zit in het tweede leerjaar van de opleiding Software
          Developer (MBO niveau 4).
          Ik heb altijd al interesse gehad in IT en vind het interessant hoe ik websites kan maken
