@@ -8,7 +8,7 @@ function Projects () {
         <ul>
             
         <img src="public/germany.png" alt="project1" />
-        <li><Link className="DetailButton" to="/DetailPage">Details</Link></li>
+        <li><Link className="DetailButton" to="/detailpage">Details</Link></li>
          
 
 
@@ -16,7 +16,7 @@ function Projects () {
 
          
         <img src="public/escaperoom space station.png" alt="project2" />
-        <li><Link className="DetailButton" to="/DetailPage">Details</Link></li>
+        <li><Link className="DetailButton" to="/detailpage">Details</Link></li>
         </ul>
 
          

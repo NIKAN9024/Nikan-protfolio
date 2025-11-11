@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
     <section className="app">
-      <h1 className="title">Contact Ons</h1>
-      <p>Hier kunt u ons contacteren.</p>
+      <h1 className="title">Contact Mij</h1>
+      <p>Hier kunt u mij contacteren.</p>
 
 
       <form>
