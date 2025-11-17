@@ -1,33 +1,35 @@
-import { Link, Outlet} from "react-router-dom";
-
-function Projects () {
-    return (
-        <>
-        <section className="app">
-         <h1 className="title">Projects</h1>
-        <ul>
-            
-        <img src="public/germany.png" alt="project1" />
-        <li><Link className="DetailButton" to="/detailpage">Details</Link></li>
-         
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import  projectsData  from './project.js';
+import Project from '../components/Project';
 
 
+function Projects() {
+  const navigate = useNavigate();
+  const [projectList] = useState(projectsData);
 
+  const goToDetail = (id) => {
+    navigate(`/project/${id}`);
+  };
 
-         
-        <img src="public/escaperoom space station.png" alt="project2" />
-        <li><Link className="DetailButton" to="/detailpage">Details</Link></li>
-        </ul>
-
-         
-
-
-
-        </section>
-
-        <Outlet/>
-        </>
-    );
+  return (
+    <section>
+      <h1>Projecten</h1>
+      <h2>Mijn Projecten</h2>
+      <section className="card-container">
+      
+      
+      {projectList.map(project => (
+        <Project
+          key={project.id}
+          project={project}
+          onShowDetail={goToDetail}
+        />
+      ))}
+      </section>
+    </section>
+  );
 };
+
 
 export default Projects;

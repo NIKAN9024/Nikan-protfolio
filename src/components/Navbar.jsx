@@ -8,9 +8,9 @@ export default function Navbar() {
       
       <ul>
         <li><Link className="nav-button" to="/">Home</Link></li>
-        <li><Link className="nav-button" to="/about">Over Mij</Link></li>
-        <li><Link className="nav-button" to="/projects">Projects</Link></li>
-        <li><Link className="nav-button" to="/contact">Contact</Link></li>
+        <li><Link className="nav-button" to="/About">Over Mij</Link></li>
+        <li><Link className="nav-button" to="/Projects">Projects</Link></li>
+        <li><Link className="nav-button" to="/Contact">Contact</Link></li>
       
       </ul>
 

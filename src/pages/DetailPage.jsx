@@ -1,28 +1,26 @@
-import { useState } from "react";
+import { useParams, useNavigate } from 'react-router-dom';
+import projectsData from './project.js';
 
 
+function DetailPage () {
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-const DetailPage = () => {
-    return (  
+  const project = projectsData.find((p) => p.id === Number(id));
 
-       <section className="Project1">
-        <img src="public/project_1.png" alt="project1"  className="left-img"/>
-        <img src="public/project_2.png" alt="project2"  className="right-img"/>  
+  if (!project) {
+    return <section>Project niet gevonden</section>;
+  }
 
-        <h1 className="title">Escape Room in de ruimte</h1>
-        <p>Ik heb  met 3 studenten een online escaperoom gemaakt based in de ruimte 
-           en er waren in totaal 60 kamers en in elke kamer staan er vragen waar je minimaal 
-           10 minuten hebt om ze te beantwoorden, 
-           als je binnen 10 minuten de vragen niet kunt beantwoorden  ga je automatisch helemaal terug naar de start.
-           Mijn taak was om 10 kamers te maken 
-           met elke kamer een spel. Ik heb voornamelijk PHP gebruikt met deze opdracht
-        </p>
-
-
-       </section>
-
-     
-    );
+  return (
+    <section className="project-detail">
+      <img src={project.image} alt={project.name} /> {}
+      <h2>{project.name}</h2>
+      <p><strong>Details:</strong> {project.details}</p>
+      <p><strong>Beschrijving:</strong> {project.description}</p>
+      <a href="/projects">Terug</a>
+    </section>
+  );
 };
- 
+
 export default DetailPage;
