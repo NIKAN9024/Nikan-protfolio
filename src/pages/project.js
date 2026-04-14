@@ -11,7 +11,7 @@ const projects = [
         title: "Escape Room in de Ruimte",
         description: "Een online escaperoom spel gebaseerd in de ruimte.",
           image: "/images/project_2.png",
-        details: "Samen met drie medestudenten heb ik een online escaperoom ontwikkeld die zich afspeelt in de ruimte. Het spel bestaat uit 60 kamers, elk met unieke puzzels en uitdagingen die binnen een tijdslimiet van 10 minuten moeten worden opgelost. Mijn bijdrage bestond uit het ontwerpen van 10 kamers en het implementeren van de spelmechanica met behulp van PHP."
+        details: "Ik heb  met 3 studenten een online escaperoom gemaakt based in de ruimte en er waren in totaal 60 kamers en in elke kamer staan er vragen waar je minimaal 10 minuten hebt om ze te beantwoorden, als je binnen 10 minuten de vragen niet kunt beantwoorden  ga je automatisch helemaal terug naar de start. Mijn taak was om 10 kamers te maken met elke kamer een spel. Ik heb voornamelijk PHP gebruikt met deze opdracht"
     }
 ];
 

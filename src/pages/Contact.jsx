@@ -1,35 +1,44 @@
-const Contact = () => {
+
+export default function Contact() {
+
+
+
+
+ 
+
+
+
+
+
   return (
-    <section className="app">
-      <h1 className="title">Contact Mij</h1>
-      <p>Hier kunt u mij contacteren.</p>
+    <div className="contact-container">
+      <h1>Contact</h1>
 
+      <form className="contact-form">
+        <div className="contact-row">
+          <div className="contact-field">
+            <label>Voornaam</label>
+            <input type="text" />
+          </div>
 
-      <form>
-        <label>Naam:</label>
-        <input type="text" />
+          <div className="contact-field">
+            <label>Achternaam</label>
+            <input type="text" />
+          </div>
+        </div>
 
+        <div className="contact-field">
+          <label>Email</label>
+          <input type="email" />
+        </div>
 
-        <label>Email:</label>
-        <input type="text" />
+        <div className="contact-field">
+          <label>Bericht</label>
+          <textarea></textarea>
+        </div>
 
-
-
-
-        <label>Bericht:</label>
-        <input type="text" />
-
-
-        <button>Verstuur</button>
-
-        
+        <button type="submit">Submit</button>
       </form>
-
-
-
-
-    </section>
+    </div>
   );
-};
-
-export default Contact;
+}

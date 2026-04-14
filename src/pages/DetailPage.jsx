@@ -13,6 +13,13 @@ function DetailPage () {
   }
 
   return (
+
+
+
+
+
+
+
     <section className="project-detail">
       <img src={project.image} alt={project.name} /> {}
       <h2>{project.name}</h2>
